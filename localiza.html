@@ -11,7 +11,7 @@
 <body>
       <script>
         var nome = ["Vinicius", "Narukami", "Ralsei"];
-        var turma = ["1° ano", "2° ano", "3° ano",];
+        var turma = ["1° Ano", "2° Ano", "3° Ano",];
         var tri1 = [80, 70, 10];
         var tri2 = [90, 40, 60];
         var tri3 = [70, 60, 20];
@@ -22,7 +22,9 @@
             let i = 0;
             document.write("<table border=1>");
                 for(i = 0; i < nome.length; i++){
-                    if(nome[i] == nomeComparado){
+                    if(nome[i].indexOf (nomeComparado) !== -1 ||
+                    turma[i].indexOf (turmaComparado) !== -1
+                    ){
 
                         document.write("<tr>");
                           document.write("<td>");
