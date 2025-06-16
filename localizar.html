@@ -6,11 +6,11 @@
     <title>Localizar</title>
 </head>
 <body>
-        <script>
+      <script>
   var de = ["Curitiba", "São Paulo", "Rio de Janeiro", "Belo Horizonte", "Porto Alegre", "Florianópolis", "Salvador", "Fortaleza", "Brasília", "Recife", "Manaus", "Belém", "Goiânia", "Vitória", "Campinas", "Natal", "João Pessoa", "São Luís", "Maceió", "Cuiabá"];
   var para = ["Aracaju", "Teresina", "Palmas", "Macapá", "Rio Branco", "Boa Vista", "Campo Grande", "Cascavel", "Londrina", "Uberlândia", "Joinville", "Sorocaba", "Niterói", "Diadema", "São Bernardo do Campo", "São José dos Campos", "Bauru", "Marília", "Petrópolis", "Caxias do Sul"];
   var ida = ["01/01/2025", "14/02/2025", "17/03/2025", "22/04/2025", "05/05/2025", "12/06/2025", "22/07/2025", "15/08/2025", "07/09/2025", "12/10/2025", "02/11/2025", "25/12/2025", "31/01/2025", "28/02/2025", "30/03/2025", "30/04/2025", "30/05/2025", "30/06/2025", "30/07/2025", "30/08/2025"];
-  var volta = ["10/01/2025", "20/01/2025", "30/01/2025", "05/02/2025", "15/02/2025", "25/02/2025", "10/03/2025", "20/03/2025", "30/03/2025", "05/04/2025", "15/04/2025", "25/04/2025", "10/05/2025", "20/05/2025", "10/06/2025", "20/06/2025", "10/07/2025", "20/07/2025", "10/08/2025", "20/08/2025"];
+  var volta = ["10/01/2025", "20/02/2025", "30/03/2025", "05/04/2025", "15/05/2025", "25/06/2025", "10/07/2025", "20/08/2025", "30/09/2025", "05/10/2025", "15/11/2025", "25/12/2025", "10/02/2025", "20/03/2025", "10/04/2025", "20/05/2025", "10/06/2025", "20/07/2025", "10/08/2025", "20/09/2025"];
   var empresa = ["Gontijo", "Cometa", "Itapemirim", "Expresso do Sul", "Viação", "Gontijo", "Cometa", "Itapemirim", "Expresso do Sul", "Viação", "Gontijo", "Cometa", "Itapemirim", "Expresso do Sul", "Viação", "Gontijo", "Cometa", "Itapemirim", "Expresso do Sul", "Viação"];
   var paradas = [0, 1, 2, 3, 4, 1, 2, 0, 3, 4, 2, 1, 0, 3, 4, 1, 2, 0, 3, 4];
   var tipo = ["Gontijo 2004", "Cometa 8645", "Itapemirim 8364", "Expresso do Sul 8422", "Viação 1001", "Gontijo 1229", "Cometa 4158", "Itapemirim 1895", "Expresso do Sul 6885", "Viação 1221", "Gontijo 2774", "Cometa 8025", "Itapemirim 3064", "Expresso do Sul 7792", "Viação 1781", "Gontijo 1243", "Cometa 9158", "Itapemirim 7795", "Expresso do Sul 6875", "Viação 1921"];
@@ -28,7 +28,7 @@
     let i = 0;
    document.write("<table border=1>")
     for (i = 0; i < de.length; i++) {
-      if (de[i].indexOf(deComparado) !== -1 && para[i].indexOf(paraComparado) !== -1 && ida[i].indexOf(idaComparado) !== -1 && volta[i].indexOf(voltaComparado) !== -1 && empresa[i].indexOf(empresaComparado) == -1 || paradas[i].indexOf(paradasComparado) !== -1 && tipo[i].indexOf(tipoComparado) !== -1
+      if (de[i].indexOf(deComparado) !== -1 && para[i].indexOf(paraComparado) !== -1 && ida[i].indexOf(idaComparado) !== -1 && volta[i].indexOf(voltaComparado) !== -1 && empresa[i].indexOf(empresaComparado) !== -1 || paradas[i].indexOf(paradasComparado) !== -1 && tipo[i].indexOf(tipoComparado) !== -1
       
       ){
         document.write("<tr>");    
